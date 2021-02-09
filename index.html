@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> 
 <style>
 body {font-family: "Jost", sans-serif}
 .mySlides {display: none}
 .h1 {font-weight: 550; font-family: "Lato", sans-serif}
+.h2 {font-weight: 4; font-family: 'Ropa Sans', sans-serif;}
 .container-iframe {
   position: relative;
   overflow: hidden;
@@ -27,6 +30,8 @@ body {font-family: "Jost", sans-serif}
   width: 100%;
   height: 100%;
 }
+<!--(previous font for h1) font-family: "Lato", sans-serif -->
+<!--(previous font for body) font-family: "Jost", sans-serif -->
 </style>
 
 <body>
@@ -36,8 +41,10 @@ body {font-family: "Jost", sans-serif}
 <div class="w3-border-bottom w3-border-white">
   <div class="w3-bar w3-black w3-card w3-border-bottom w3-border-white">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">SIMON MATTHEWS-HOWARD</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">SIMON MATTHEWS HOWARD</a>
     <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+	<a href="#films" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FILMS</a>
+	<a href="#tools" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOOLS</a>
 	<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
     <!--<a href="#tools" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOOLS</a>-->
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
@@ -49,55 +56,40 @@ body {font-family: "Jost", sans-serif}
 
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#films" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FILMS</a>
   <a href="#tools" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOOLS</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
   <!--a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>-->
 </div>
 
 <!-- Page content -->
-<div class="w3-content w3-black" style="max-width:5000px;margin-top:1px">
-
-	<div class="w3-container w3-content w3-center w3-padding-32" style="max-width:1500px">
-		
-	</div>
+<div class="w3-content w3-black w3-padding-16 w3-center" style="max-width:5000px;margin-top:2px">
   
-  <!-- Automatic Slideshow Images 
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/LfW-00.png" style="width:100%">
-    <div class="w3-display-middle w3-container w3-text-white w3-hide-small w3-black w3-wide w3-opacity">
-      <h5>INTERACTIVE AUDIO DESIGN</h5>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/lebanonroom.png" style="width:100%">
-    <div class="w3-display-middle w3-container w3-text-white w3-hide-small w3-black w3-wide w3-opacity">
-      <h5>LOCATION RECORDING</h5>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/acceptableface.png" style="width:100%">
-    <div class="w3-display-middle w3-container w3-text-white w3-hide-small w3-black w3-wide w3-opacity">
-		<h5>POST-PRODUCTION SOUND</h5>      
-    </div>
-  </div>-->
-  
-  <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:1000px">
+ <!--<div class="w3-container w3-content w3-black  " style="max-width:1000px;margin-top:1px">-->
 
 
   <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:800px">
+	<br><br><br><br>
 	<h1 class="w3-middle">I'm Simon. I design sounds for Games & Film,  develop audio tools, and make short games.</h1>
-	<p class="w3-middle w3-large">Watch my showreel below, <a href="#projects">find out more about my recent work</a> or <a href="#contact">get in touch. </a><p>
+	<p class="w3-middle w3-large">Watch my showreel below, <a href="#projects">find out more about my recent work</a> or <a href="#contact">get in touch.</a><p>
   </div>
-
-	<div class="container-iframe">
-			<br><br><br><br>
-			<iframe class="responsive-iframe" src="https://player.vimeo.com/video/393911195" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-		</div>
+  
+  <div class="w3-container w3-content w3-center" style="max-width:1000px">
+  <div class="container-iframe">
+	<br><br><br><br>
+	<iframe class="responsive-iframe" src="https://player.vimeo.com/video/393911195" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+  </div>
   
   <div class="w3-container w3-padding-32"></div>
   
+  
+  
+  
+  
   <!-- Projects -->
-  <div class="w3-container w3-content w3-center w3-padding-64 w3-border w3-border-white" style="max-width:1000px" id="projects">
+  <div class="w3-container w3-content w3-black w3-padding-64 w3-border w3-border-white" style="max-width:1000px" id="projects">
     <h2 class="w3-wide w3-left w3-border-bottom w3-border-white w3-margin-top">PROJECTS</h2> <br>
     <p class="w3-opacity"><i></i></p><br>
     <p class="w3-justify w3-large">Since 2017 I have been working as a freelance audio professional filling various roles in productions and events. I have featured some of my most recent projects below.</p>
@@ -111,7 +103,7 @@ body {font-family: "Jost", sans-serif}
       </div>
       <div class="w3-twothird">
 		<div class="w3-container w3-margin">
-          <h3 class="w3-left">LOST FOR WORDS (2020)</h3> <br><br>
+          <h3 class="w3-left">LOST FOR WORDS (2021)</h3> <br><br>
 		  <p class="w3-justify"><i>Developed by Simon Howard</i></p>
 		  <p class="w3-justify">I realised you can do a lot of very creative things with sound using game engines and I starting having a lot of exciting ideas I wanted to explore. I didn't have a developer to work with at the time so I began doing things myself. After a few short experiments I decided to create a game with minimalist graphics, maximising the experience using sound. This is where Lost for Words began. A haunting maze of endless corridors, scattered with brief moments of respite. Equipped with only a radio and cryptic guidance, can you find a way out? Lost for Words is being developed with Unity and Wwise and will be released for Windows and macOS next year. 
 		  </p>
@@ -211,18 +203,127 @@ body {font-family: "Jost", sans-serif}
 	<!--<br><h4 class="w3-wide w3-center">BACK TO TOP <i class="fa fa-long-arrow-up"></i></h4>-->
 	
 	</div>
-
-  <!-- TOOLS 
-  <div class="w3-black" id="tools">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
-      <h2 class="w3-wide w3-left w3-border-bottom w3-border-white">TOOLS</h2> <br>
-      <p class="w3-opacity w3-center"><i></i></p><br>
-
+	
+	<div class="w3-padding-64"></div>
+	
+	<div class="w3-container w3-content w3-center w3-padding-64 w3-border w3-border-white" style="max-width:1000px" id="films">
+	<h2 class="w3-wide w3-left w3-border-bottom w3-border-white w3-margin-top w3-margin-left">FILMS</h2>
+	<div class="w3-padding-32"></div>
+	<div class="w3-row-padding w3-padding-32 w3-center w3-black"  id="Film">
+    <div class="w3-quarter">
+	  <a href="https://julianpericles.com/I-remember-once-you-needed-me" target="_blank">
+		<img class="w3-hover-opacity" src="images/film/iroynm.png" alt="I Remember Once You Needed Me" style="width:100%">
+      </a>
+	  <div style="text-align:left;line-height:1.1">
+		<h4>I REMEMBER ONCE YOU NEEDED ME</h4>
+		<p class="w3-text-gray">Directed by Julian Triandafyllou </p>
+		<p>Sound Deisgner // Composer</p>
+	  </div>
     </div>
-  </div>-->
+    <div class="w3-quarter">
+	  <a href="https://www.bbc.co.uk/iplayer/episode/m000mh7j/beacons-short-films-from-wales-series-1-3-i-choose" target="_blank">
+		<img class="w3-hover-opacity" src="images/film/ichoose.webp" alt="I Choose" style="width:100%">
+      </a>
+	  <div style="text-align:left;line-height:1.1">
+		<h4>I CHOOSE</h4>
+		<p class="w3-text-gray">Directed by Tina Pasotra</p>
+		<p>Music Editor</p>
+	  </div>
+    </div>
+	<div class="w3-quarter">
+	  <a href="https://www.theopanagopoulos.com/my-own-personal-lebanon" target="_blank">
+		<img class="w3-hover-opacity" src="images/film/mopl.png" alt="My Own Personal Lebanon" style="width:100%">
+      </a>
+	  <div style="text-align:left;line-height:1.1">
+		<h4>MY OWN PERSONAL LEBANON</h4>
+		<p class="w3-text-gray">Directed by Theo Panagopoulos</p>
+		<p>Sound Designer // Production Sound Mixer</p>
+	  </div>
+      
+    </div>
+    <div class="w3-quarter">
+	  <a href="https://www.hollysummerson.com/acceptable-face" target="_blank">
+		<img class="w3-hover-opacity" src="images/film/af.png" alt="Acceptable Face" style="width:100%">
+      </a>
+	  <div style="text-align:left;line-height:1.1">
+	    <h4>ACCEPTABLE FACE</h4>
+        <p class="w3-text-gray">Animation by Holly Summerson</p>
+	    <p> Sound Designer // Foley Artist</p>
+	  </div>
+    </div>
+	</div>
+
+	<div class="w3-row-padding w3-padding-16 w3-center w3-black" id="Film">
+    <div class="w3-quarter">
+	  <a href="https://jiyoonsfilm.com/The-Way-We-Wait" target="_blank">
+		<img class="w3-hover-opacity" src="images/film/twww.png" alt="The Way We Wait" style="width:100%">
+      </a>
+	  <div style="text-align:left;line-height:1.1">
+		<h4>THE WAY WE WAIT</h4>
+		<p class="w3-text-gray">Directed by Ji Yoon Park</p>
+		<p>Sound Designer // Foley Artist // Production Sound Mixer</p>
+	  </div>
+    </div>
+    <div class="w3-quarter">
+	  <a href="https://tiny.cc/RRApp" target="_blank">
+		<img class="w3-hover-opacity" src="images/film/rr.png" alt="Recall Refelection" style="width:100%">
+	  </a>
+	  <div style="text-align:left;line-height:1.1">
+		<h4>RECALL REFLECTION</h4>
+		<p class="w3-text-gray">Collaborative Installation & Film Short</p>
+		<p>Co-Director // Sound Designer</p>
+	  </div>
+    </div>
+    </div>
+  </div>
+
+
+<!-- TOOLS    --    TOOLS    --   TOOLS   --   TOOLS   -->
+	<div class="w3-padding-64"></div>
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64 w3-border w3-border-white" style="max-width:1000px" id="tools">
+	<h2 class="w3-wide w3-left w3-border-bottom w3-border-white w3-margin-top w3-margin-left">AUDIO TOOLS</h2>
+	<div class="w3-padding-32"></div>
+	<div class="w3-row-padding w3-padding-32 w3-center w3-black"  id="Film">
+    <div class="w3-half w3-cell-middle">
+      <img src="images/tools/as.png" alt="Aftersperse" style="width:100%">
+    </div>
+    <div class="w3-half">
+      <div style="text-align:left">
+		<h4>AFTERSPERSE v0.1</h4>
+		<p class="w3-text-gray">Max4Live Effect</p>
+		<p>Aftersperse lies somewhere in-between a delay, a time stretcher, and a granular synthesiser. Clouds of looping audio grains are created from an incoming sound source. Grains are sampled and destroyed at periodic intervals as they wash in and out of focus.
+			</br>
+			The plug-in was designed as a hands-free improvisation tool, providing material for a performer to respond to based on what was previously played.
+			</br></br>		
+			The effect is a rebuild of a max patch used in my 2017 performance piece "EXECUTE PLAN B" for flugelhorn and 8 channel surround. You can listen to a <a href="https://soundcloud.com/simon-matthews-howard/execute-plan-b-performance-excerpt" target="_blank"> stereo excerpt on SoundCloud.</a>
+			</br></br>
+			v0.1 is the basic concept realised with minimal features, ready to plug straight into your Ableton workflow.
+			</br></br>
+			Thanks to <a href="https://www.tinpark.com" target="_blank">Martin Parker</a> for the fantastically handy grain window patch!
+			</br></br>
+			<a href="https://github.com/smhwrd/aftersperse" target="_blank">Download from GitHub</a></br>
+			<i class="w3-text-gray">GNU Public Licence</i></p>
+	  </div>
+    </div>
+	</div>
+	</div>
+	
+  
+  
+  
+  
+  
   <div class="w3-padding-64"></div>
   
-  <div class="w3-container w3-content w3-padding-64  w3-border w3-border-white" style="max-width:1000px" id="about">
+  
+  
+  
+  
+  
+  
+  <div class="w3-container w3-content w3-padding-64 w3-border w3-border-white" style="max-width:1000px" id="about">
 	<div class="w3-row w3-twothird">
 		
 		<div class="w3-container ">
@@ -237,7 +338,7 @@ He is known in some parts as DJ Ryanair, an infamous DJ who lands 90% on-time.
 	</div> 
 	<div class="w3-row w3-third">
 		<div class="w3-container ">
-			<img src="images/profile_sq.jpg" alt="Simon Matthews Howard" class="w3-border w3-border-white" style="width:100%">
+			<img src="images/profile_sq.jpg" alt="Simon Matthews Howard" class="w3-border w3-border-dark-gray" style="width:100%">
 		</div>
 	</div> 
   </div>
@@ -247,8 +348,8 @@ He is known in some parts as DJ Ryanair, an infamous DJ who lands 90% on-time.
   <div class="w3-padding-64"></div>
 
   <!-- Contact  -->
-  <div class="w3-container w3-content w3-padding-64  w3-border w3-border-white" style="max-width:1000px" id="contact">
-    <h2 class="w3-wide w3-center w3-border-bottom w3-border-dark-gray">GET IN TOUCH</h2>
+  <div class="w3-container w3-content w3-padding-64 w3-border w3-border-white" style="max-width:1000px" id="contact">
+    <h2 class="w3-wide w3-center">GET IN TOUCH</h2>
     <div class="w3-row w3-padding-16 w3-margin-left w3-margin-right">
       <div class="w3-large w3-center">
 		<p>If you have any questions or queries, please don't hesitate to send me an e-mail.
@@ -271,6 +372,8 @@ He is known in some parts as DJ Ryanair, an infamous DJ who lands 90% on-time.
   
   <div class="w3-padding-64"></div>
   
+  </div>
+  
 <!-- End Page Content -->
 </div>
 </div>
@@ -290,21 +393,6 @@ He is known in some parts as DJ Ryanair, an infamous DJ who lands 90% on-time.
 </footer>-->
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
