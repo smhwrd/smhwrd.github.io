@@ -1,0 +1,54 @@
+@import "webfonts/font.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    background-color: #e7fb04;
+}
+
+.big {
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+    font-size: 48pt;
+}
+
+h1 {
+    font-family: 'Sporting Grotesque_Regular';
+    font-size: 1em;
+    color: #2C2627;
+}
+
+p {
+    font-family: 'Minipax-Regular';
+    font-size: .33em;
+    position: relative;
+    top: -1em;
+    color: #2C2627;
+
+}
+
+body {
+	background: linear-gradient(5deg, #e7fb04, #cefb04, #b9fb04, #a5fb04);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
