@@ -1,0 +1,138 @@
+@import url("../style.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 11pt;
+  }
+
+.nav-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 100vw;
+    height: 2rem;
+}
+
+.return {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    margin-top: 3rem;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100vw;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+    /* background-color: darkorange; */
+    margin-top: 7rem;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 800px;
+    /* background-color: aquamarine; */
+}
+
+.page-links {
+/*  position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    max-width: 200px; */
+    /* display: flexbox;
+    flex-direction: column;
+    align-items: right; */
+    /* top: 6rem; */
+    /* background-color: blueviolet; */
+    display: flex;
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.page-links a {
+    display: block;
+    min-width: 10rem;
+    margin: 0.4rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+    border: 1px black solid;
+    border-radius: 1rem;
+    font-size: 1.2em;
+}
+
+.page-links a:hover{
+    background-color: black;
+    color: #ede8de;
+}
+
+.page-title {
+    margin-bottom: 7rem;
+}
+
+.article {
+    display: block;
+    margin: 2rem;
+    margin-bottom: 3rem;
+    /* background-color: whitesmoke; */
+}
+
+.article-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-data {
+    margin-bottom: 1.2rem;
+}
+
+.article-figure {
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.article-image {
+    width: 100%;
+    max-height: 10rem;
+    object-fit: cover;
+    border: #2C2627;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 1rem;
+}
+
+.article-text {
+    transform: scale(1, 1.2) skew(0deg, 0deg);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+/* MOVE PAGE LINKS TO NAVBAR FOR MOBILE */
+@media (width < 800px) {
+    .page-links {
+        display: none;
+    }
+
+    .article-figure {
+        margin-bottom: 2rem;
+    }
+    
+}

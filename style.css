@@ -1,82 +1,217 @@
-@import "webfonts/font.css";
+@font-face {
+  font-family: 'Sligoil';
+  src: url(webfonts/sligoil/Sligoil-Micro.woff2) format('woff2'),        
+       url(webfonts/sligoil/Sligoil-Micro.woff) format('woff'),         
+} 
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 11pt;
   }
 
 html {
-    background-color: #e7fb04;
+  background-color: #ede8de;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
 }
 
-.big {
-    height: 99vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5vw;
-    font-size: 48pt;
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.under-construction {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  height: 1.5rem;
+  width: 100vw;
+}
+
+.under-construction p {
+  top: 0.2em;
+  color: #ede8de;
+  animation-name: scroll;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll {
+  100% {
+    left: -300px;
+  }
+  0% {
+    left:130vw;
+  }
+}
+
+.visual {
+  /* position: relative; */
+  /* flex: 1; */
+  /* height: 100%; */
+  width: 100%;
+  height: 20rem;
+  /* padding: 10px; */
+  /* padding-bottom: 200px; */
+  /* background-color: tomato; */
+}
+
+canvas {
+  /* background-color: violet; */
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  border: #2C2627;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 1rem;
+  /* z-index: -1; */
+}
+
+.sidebar {
+  /* width: 25em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color:none;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar div {
+  display:flexbox;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.title-block {
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding: 0;
+  /* background-color: aqua; */
+}
+
+.name {
+  margin-top: 1em;
+  margin-bottom: 0.17em;
+}
+
+.profession {
+  margin-bottom: 2rem;
+}
+
+.bio {
+  margin-bottom: 1rem;
+}
+
+.link-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-color: gold; */
+  padding: 0;
+  margin-top: 2rem;
+  top: -1em;
+  width: 15rem;
+}
+
+.link-block a {
+  /* background-color: coral; */
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 100%;
+  padding: .5em 0em .5em 0em;
+  margin: 0.3em 0em 0.3em 0em;
+
+}
+
+a:hover:not(.active) {
+  color: tomato;
 }
 
 h1 {
-    font-family: 'Sporting Grotesque_Regular';
-    font-size: 1em;
-    line-height: 0.9em;
-    color: #2C2627;
+  font-family: 'Sligoil', 'Monaco', 'Courier New', Courier, monospace;
+  font-size: 5rem;
+  line-height: 0.76em;
+  color: #2C2627;
 }
 
-p {
-    font-family: 'Minipax-Regular';
-    font-size: .4em;
-    position: relative;
-    color: #2C2627;
-
+.link-block {
+  font-family: 'Sligoil', 'Monaco' 'Courier New', Courier, monospace;
 }
 
-.new {
-    padding-top: 1.5em;
-    font-size: 0.25em;
-    opacity: 60%;
+h2, p, a {
+  font-size: 1rem;
+  font-weight: 300;
+  position: relative;
+  line-height: 95%;
+  color: #2C2627;
+  transform: scale(1, 1.2) skew(-3deg, 0deg);
 }
 
-.new:after {
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: bottom;
-    -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
-    animation: ellipsis steps(4,end) 900ms infinite;
-    content: "\2026";
-    width: 3px;
-  }
+h2 {
+  font-size: 1.2rem;
+  font-style: medium;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+span{
+  position: relative;
+  top: -0.03em;
+  font-size: 1.4rem;
+  animation-timing-function: ease-out;
+  color: #ede8de;
+}
+
+a:hover > #finger {
+  color: tomato;
+  animation-name: finger;
+  animation-fill-mode: forwards;
+  animation-duration: 100ms;
   
-  @keyframes ellipsis {
-    to {
-      width: 1.25em;    
-    }
-  }
-  
-  @-webkit-keyframes ellipsis {
-    to {
-      width: 1.25em;    
-    }
-  }
-
-body {
-	background: linear-gradient(45deg, #e7fb04, #bfe709, #b9fb04, #a5fb04);
-	background-size: 400% 400%;
-	animation: gradient 30s ease infinite;
-	height: 100vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+@keyframes finger {
+  0%{
+    left: 0;
+  }
+  100% {
+    left: 0.2em;
+    
+  }
+}
+
+@media (width > 430px) {
+
+  h1 {
+    line-height: 2.4rem;
+  }
+
+  .sidebar {
+  max-width: 800px;
+  margin: auto;
+  }
+
+  .title-block {
+    flex: 1;
+    width: fit-content;
+  }
+
+  .bio {
+    margin-bottom: 0.0rem;
+  }
+
+  .visual {
+    flex: 2;
+    min-width: 40em;
+    margin: auto;
+  }
 }

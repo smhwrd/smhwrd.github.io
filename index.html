@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>Simon Matthews Howard</title>
+    <title>Simon Howard</title>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000000"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <!-- <script src="main.js"></script> -->
     </head>
     <body>
-        <div class="big">
-            <h1>Simon Howard</h1>
-            <p>Sound Designer & Digital Artist</p>
-            <p class="new">website incoming</p>
+        <nav class="under-construction">
+            <p>~~~website under construction~~~</p>
+        </nav>
+        <div class="sidebar">
+            <div class="title-block">
+                <h1 class="name">Simon<br>Howard</h1>
+                <h2 class="profession">Creative Technologies Specialist</h2>
+                <p class="bio">Design and implementation of creative tech solutions for performance arts, film, exhibition, and interactive media. <a href="bio">Read more...</a></p>
+            </div>
+            <div class="visual">
+                <!-- <p> hello</p> -->
+                <canvas id="canvas" class="glslCanvas" data-fragment-url="shader.frag" width="500" height="500" data-textures="data/tex.jpg"></canvas>
+                <script src="canvas.js"></script>
+                <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+            </div>
+            <div class="link-block">
+                <a href="pages/projects.html"><span id="finger">☞</span> Projects</a>
+                <a><span id="finger">☞</span> Technologies</a>
+                <a><span id="finger">☞</span> Teaching</a>
+                <a><span id="finger">☞</span> Connect</a>
+                <a href="pages/bio.html"><span id="bio">☞</span> Bio</a>
+            </div>
         </div>
     </body>
+    <footer>
+
+    </footer>
 </html>
