@@ -54,7 +54,8 @@ body {
   /* flex: 1; */
   /* height: 100%; */
   width: 100%;
-  height: 20rem;
+  max-width: 100vw;
+  height: 30rem;
   /* padding: 10px; */
   /* padding-bottom: 200px; */
   /* background-color: tomato; */
@@ -98,6 +99,8 @@ canvas {
 .name {
   margin-top: 1em;
   margin-bottom: 0.17em;
+  width: 50%;
+  line-height: 0.73;
 }
 
 .profession {
@@ -136,7 +139,6 @@ a:hover:not(.active) {
 h1 {
   font-family: 'Sligoil', 'Monaco', 'Courier New', Courier, monospace;
   font-size: 5rem;
-  line-height: 0.76em;
   color: #2C2627;
 }
 
@@ -189,7 +191,7 @@ a:hover > #finger {
   }
 }
 
-@media (width > 430px) {
+@media (width > 600px) {
 
   h1 {
     line-height: 2.4rem;
@@ -210,8 +212,13 @@ a:hover > #finger {
   }
 
   .visual {
-    flex: 2;
     min-width: 40em;
     margin: auto;
   }
+}
+
+footer {
+  margin-top: 5rem;
+  height: 10rem;
+  background-color: black;
 }
