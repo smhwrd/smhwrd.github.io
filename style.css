@@ -12,11 +12,12 @@
   }
 
 html {
-  background-color: #ede8de;
+  background-color: black;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
 }
 
 body {
+  background-color: #ede8de;
   width: 100%;
   height: 100%;
 }
@@ -28,6 +29,7 @@ body {
   background-color: black;
   height: 1.5rem;
   width: 100vw;
+  z-index: 10;
 }
 
 .under-construction p {
@@ -49,43 +51,20 @@ body {
   }
 }
 
-.visual {
-  /* position: relative; */
-  /* flex: 1; */
-  /* height: 100%; */
-  width: 100%;
-  max-width: 100vw;
-  height: 30rem;
-  /* padding: 10px; */
-  /* padding-bottom: 200px; */
-  /* background-color: tomato; */
-}
 
-canvas {
-  /* background-color: violet; */
-  /* position: fixed;
-  top: 0;
-  left: 0; */
-  border: #2C2627;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 1rem;
-  /* z-index: -1; */
-}
 
-.sidebar {
+main {
   /* width: 25em; */
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
   background-color:none;
   height: 100%;
   overflow: auto;
 }
 
-.sidebar div {
+main div {
   display:flexbox;
-  padding: 16px;
+  margin: 16px;
   text-decoration: none;
 }
 
@@ -111,6 +90,36 @@ canvas {
   margin-bottom: 1rem;
 }
 
+.landing {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.visual {
+  /* position: relative; */
+  /* flex: 1; */
+  /* height: 100%; */
+  width: 400px;
+  height: 400px;
+  /* padding: 10px; */
+  /* padding-bottom: 200px; */
+  /* background-color: tomato; */
+}
+
+canvas {
+  /* background-color: violet; */
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  border: #2C2627;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 1rem;
+  /* z-index: -1; */
+}
+
 .link-block {
   position: relative;
   display: flex;
@@ -118,22 +127,21 @@ canvas {
   /* background-color: gold; */
   padding: 0;
   margin-top: 2rem;
-  top: -1em;
-  width: 15rem;
+  /* top: -1em; */
 }
 
 .link-block a {
   /* background-color: coral; */
   font-size: 1.2em;
   font-weight: 600;
-  width: 100%;
-  padding: .5em 0em .5em 0em;
-  margin: 0.3em 0em 0.3em 0em;
+  /* padding: .5em 0em .5em 0em; */
+  margin: 0.3em 0em 0.6em 0em;
 
 }
 
 a:hover:not(.active) {
-  color: tomato;
+  /* color: tomato; */
+  animation: color-change 100ms ease-out 0ms 1 forwards;
 }
 
 h1 {
@@ -165,9 +173,9 @@ a {
   text-decoration: none;
 }
 
-span{
+#finger {
   position: relative;
-  top: -0.03em;
+  /* top: -0.03em; */
   font-size: 1.4rem;
   animation-timing-function: ease-out;
   color: #ede8de;
@@ -177,17 +185,31 @@ a:hover > #finger {
   color: tomato;
   animation-name: finger;
   animation-fill-mode: forwards;
-  animation-duration: 100ms;
-  
+  animation-duration: 100ms; 
+}
+
+.link-des {
+  color: #ede8de;
+}
+
+a:hover > .link-des {
+  /* color: tomato; */
+  animation: color-change 100ms ease-out 0ms 1 forwards;
 }
 
 @keyframes finger {
   0%{
-    left: 0;
+    left: -0.8em;
   }
   100% {
-    left: 0.2em;
+    left: 0.0em;
     
+  }
+}
+
+@keyframes color-change {
+  100% {
+    color: tomato;
   }
 }
 
@@ -197,7 +219,7 @@ a:hover > #finger {
     line-height: 2.4rem;
   }
 
-  .sidebar {
+  main {
   max-width: 800px;
   margin: auto;
   }
@@ -211,14 +233,62 @@ a:hover > #finger {
     margin-bottom: 0.0rem;
   }
 
+
+}
+
+@media screen and (width <= 700px) {
   .visual {
-    min-width: 40em;
-    margin: auto;
+    width: 100vw;
   }
 }
 
 footer {
   margin-top: 5rem;
-  height: 10rem;
+  height: 5rem;
   background-color: black;
+  display: flex;
+}
+
+.socials {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.fa {
+  transform: scale(1,1) skew(0deg, 0deg);
+  color: #ede8de;
+}
+
+.socials .fa {
+  border: #ede8de solid 1.2px;
+  border-radius: 25%;
+  padding: 0.5em;
+  margin: 0.2em;
+}
+
+.location {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.location a {
+  font-size: ;
+}
+
+.location p {
+  transform: scale(1,1) skew(0deg, 0deg);
+  font-family: 'Sligoil', 'Monaco', 'Courier New', Courier, monospace;
+  color: #ede8de;
+  margin-left: 0.5rem;
+}
+
+.fa:hover {
+  border-color: tomato;
 }

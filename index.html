@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <!-- <script src="main.js"></script> -->
     </head>
@@ -14,27 +15,59 @@
         <nav class="under-construction">
             <p>~~~website under construction~~~</p>
         </nav>
-        <div class="sidebar">
+        <main>
             <div class="title-block">
                 <h1 class="name">Simon Howard</h1>
                 <h2 class="profession">Creative Technologies Specialist</h2>
                 <p class="bio">Design and implementation of creative tech solutions for performance arts, film, exhibition, and interactive media. <a href="/pages/bio.html">Read more...</a></p>
             </div>
-            <div class="visual">
-                <!-- <p> hello</p> -->
-                <canvas id="canvas" class="glslCanvas" data-fragment-url="shader.frag" width="500" height="500" data-textures="data/tex.jpg"></canvas>
-                <script src="canvas.js"></script>
-                <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+            <div class="landing">
+                <div class="visual">
+                    <!-- <p> hello</p> -->
+                    <canvas id="canvas" class="glslCanvas" data-fragment-url="shader.frag" width="500" height="500" data-textures="data/tex.jpg"></canvas>
+                    <script src="canvas.js"></script>
+                    <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+                </div>
+                <div class="link-block">
+                    <a href="pages/projects.html">
+                        <span id="finger">☞</span>
+                         Projects
+                        <br>
+                        <span class="link-des">previous work & experience</span></a>
+                    <a>
+                        <span id="finger">☞</span>
+                         Technologies
+                        <br>
+                        <span class="link-des">overview of skills & knowledge</span>
+                    </a>
+                    <a>
+                        <span id="finger">☞</span>
+                         Teaching
+                        <br>
+                        <span class="link-des">workshops & classes</span></a>
+                    <a href="pages/bio.html">
+                        <span id="finger">☞</span>
+                         Bio 
+                        <br>
+                        <span class="link-des">more about me</span></a>
+                </div>
             </div>
-            <div class="link-block">
-                <a href="pages/projects.html"><span id="finger">☞</span> Portfolio</a>
-                <a><span id="finger">☞</span> Technologies</a>
-                <a><span id="finger">☞</span> Teaching</a>
-                <a href="pages/bio.html"><span id="bio">☞</span> Bio</a>
-            </div>
-        </div>
+        </main>
     </body>
     <footer>
-
+        <div class="socials">
+            <a href="#" class="fa fa-instagram"></a>
+            <!-- <a href="#" class="fa fa-youtube-play"></a> -->
+            <!-- <a href="#" class="fa fa-twitter"></a> -->
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-envelope"></a>
+            <!-- <a href="#" class="fa fa-bandcamp"></a> -->
+            <!-- <a href="#" class="fa fa-soundcloud"></a> -->
+        </div>
+        <div class="location">
+            <a class="fa fa-map-marker"></a>
+            <p>Glasgow, UK</p>
+        </div>
     </footer>
 </html>
